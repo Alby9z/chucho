@@ -1,0 +1,10 @@
+{
+  "name": "Chucho — L'homme à tout faire",
+  "short_name": "Chucho",
+  "description": "Petits travaux, jardinage, entretien des espaces verts, aménagement extérieur et nettoyage.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f0e4",
+  "theme_color": "#1f3a2c",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
