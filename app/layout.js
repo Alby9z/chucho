@@ -3,11 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
-<<<<<<< HEAD
 import CookieConsent from "@/components/CookieConsent";
-=======
->>>>>>> origin/main
-
 const fraunces = Fraunces({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
@@ -139,10 +135,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
-<<<<<<< HEAD
         <CookieConsent />
-=======
->>>>>>> origin/main
       </body>
     </html>
   );

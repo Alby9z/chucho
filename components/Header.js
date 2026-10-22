@@ -5,10 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navLinks, siteConfig } from "@/lib/site-config";
 import { IconPhone } from "./Icons";
-<<<<<<< HEAD
 import Image from "next/image";
-=======
->>>>>>> origin/main
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -18,7 +15,6 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-forest border-b border-white/10">
       <div className="container-page flex items-center justify-between gap-6 py-4">
         <Link
-<<<<<<< HEAD
              href="/"
              className="flex shrink-0 items-center"
              onClick={() => setOpen(false)}
@@ -33,17 +29,6 @@ export default function Header() {
                className="h-14 w-auto object-contain md:h-16"
              />
            </Link>
-=======
-          href="/"
-          className="font-display text-2xl font-semibold tracking-wide text-cream"
-          onClick={() => setOpen(false)}
-        >
-          Chucho <span className="text-ochre">.</span>
-          <span className="block font-mono text-[0.62rem] text-cream/50 uppercase tracking-[0.14em] font-normal -mt-1">
-            L&apos;homme à tout faire
-          </span>
-        </Link>
->>>>>>> origin/main
 
         <nav
           className={`fixed inset-0 md:static bg-forest md:bg-transparent flex-col md:flex-row items-stretch md:items-center gap-1 px-7 md:px-0 pt-24 md:pt-0 pb-10 md:pb-0 transition-transform duration-300 md:transition-none ${
