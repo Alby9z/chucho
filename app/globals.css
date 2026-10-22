@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-ink font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display text-forest;
+    line-height: 1.12;
+  }
+  :focus-visible {
+    outline: 3px solid #be5334;
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-[1140px] mx-auto px-6;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono uppercase tracking-[0.14em] text-xs text-clay mb-3;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply w-5 h-[2px] bg-clay inline-block;
+  }
+  .eyebrow-light {
+    @apply text-ochre;
+  }
+  .eyebrow-light::before {
+    @apply bg-ochre;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 font-mono uppercase tracking-wider text-sm font-semibold px-6 py-3.5 rounded-full border-2 border-transparent transition-transform duration-150 hover:-translate-y-0.5;
+  }
+  .btn-primary {
+    @apply bg-clay text-paper hover:bg-clay-dark;
+  }
+  .btn-outline {
+    @apply bg-transparent border-forest text-forest hover:bg-forest hover:text-paper;
+  }
+  .btn-outline-light {
+    @apply bg-transparent border-white/30 text-cream hover:bg-cream hover:text-forest;
+  }
+  .btn-block {
+    @apply w-full justify-center;
+  }
+
+  .grid-bg {
+    background-image: linear-gradient(rgba(245,240,228,0.14) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245,240,228,0.14) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* Élément signature : étiquette d'artisan façon kraft, avec son œillet */
+  .kraft-tag {
+    @apply relative bg-ochre text-forest rounded-md px-7 py-6 text-center;
+    transform: rotate(-4deg);
+    box-shadow: 0 12px 28px rgba(31,58,44,0.28);
+  }
+  .kraft-tag::before {
+    content: "";
+    @apply absolute w-3.5 h-3.5 rounded-full bg-cream border-2 border-forest;
+    top: 14px;
+    left: 14px;
+  }
+  .kraft-tag strong {
+    @apply block font-display text-xl mb-1;
+  }
+  .kraft-tag span {
+    @apply font-mono uppercase text-[0.7rem] tracking-wide;
+  }
+
+  .checklist-item {
+    @apply flex gap-3 items-start py-3 border-b border-forest/10;
+  }
+
+  .service-detail {
+    @apply grid grid-cols-[auto,1fr] gap-7 border border-forest/10 bg-paper p-9 rounded-lg;
+  }
+
+  .icon-badge {
+    @apply w-14 h-14 rounded-full bg-forest text-ochre flex items-center justify-center flex-shrink-0;
+  }
+
+  .sub-list li {
+    @apply relative pl-5 text-sm text-ink-soft;
+  }
+  .sub-list li::before {
+    content: "—";
+    @apply absolute left-0 text-clay;
+  }
+
+  .form-field label {
+    @apply block font-mono text-xs uppercase tracking-wider text-forest mb-2 font-semibold;
+  }
+  .form-field input[type="text"],
+  .form-field input[type="email"],
+  .form-field input[type="tel"],
+  .form-field select,
+  .form-field textarea {
+    @apply w-full font-body text-[0.95rem] px-3.5 py-3 border-[1.5px] border-forest/15 rounded-md bg-cream text-ink transition-colors;
+  }
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    @apply outline-none border-clay;
+  }
+
+  .radio-chip input {
+    @apply absolute opacity-0 inset-0 cursor-pointer;
+  }
+  .radio-chip span {
+    @apply inline-flex items-center px-[18px] py-2.5 border-[1.5px] border-forest/15 rounded-full text-sm cursor-pointer transition-all bg-cream;
+  }
+  .radio-chip input:checked + span {
+    @apply bg-forest text-cream border-forest;
+  }
+
+  .legal-content h2 {
+    @apply text-2xl mt-10 mb-3;
+  }
+  .legal-content h2:first-child {
+    @apply mt-0;
+  }
+  .legal-content p {
+    @apply text-ink-soft mb-4 leading-relaxed;
+  }
+  .legal-content ul {
+    @apply list-disc pl-6 mb-4 text-ink-soft space-y-1.5;
+  }
+  .legal-content a {
+    @apply text-clay underline;
+  }
+}

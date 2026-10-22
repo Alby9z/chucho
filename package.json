@@ -1,0 +1,28 @@
+{
+  "name": "chucho-homme-a-tout-faire",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site web professionnel de Chucho, l'homme à tout faire — petits travaux, jardinage, entretien espaces verts, aménagement extérieur, nettoyage. Esboz-Brest (70) et 50 km alentour.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "resend": "^6.34.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.19",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "postcss": "8.4.39",
+    "tailwindcss": "3.4.6"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
