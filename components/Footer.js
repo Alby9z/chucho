@@ -142,14 +142,30 @@ export default function Footer() {
             </Link>
           </nav>
 
-          <div className="flex flex-col justify-between gap-2 border-t border-white/10 pt-5 sm:flex-row sm:items-center">
-            <span>
-              © {new Date().getFullYear()} {siteConfig.name} — Tous droits réservés
-            </span>
-            <Link href="/mentions-legales" className="transition-colors hover:text-ochre">
+                  <div className="flex flex-col justify-between gap-2 border-t border-white/10 pt-5 sm:flex-row sm:items-center">
+          <span>
+            © {new Date().getFullYear()} {siteConfig.name} — Tous droits réservés
+          </span>
+
+          <div className="flex flex-wrap items-center gap-4">
+            <Link
+              href="/mentions-legales"
+              className="transition-colors hover:text-ochre"
+            >
               Informations sur l’éditeur du site
             </Link>
+
+            <a
+              href="https://digiprogtech-smoky.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-ochre"
+              aria-label="Site créé par Digiprogtech"
+            >
+              Site créé par Digiprogtech
+            </a>
           </div>
+        </div>
         </div>
       </div>
     </footer>

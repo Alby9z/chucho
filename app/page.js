@@ -127,9 +127,9 @@ export default function HomePage() {
               </div>
 
               <div>
-                <strong className="block text-2xl text-ochre">100%</strong>
+                <strong className="block text-2xl text-ochre">96%</strong>
                 <span className="text-xs uppercase tracking-wide text-cream/50">
-                  Fait par Chucho
+                  Client Satisfait
                 </span>
               </div>
             </div>
