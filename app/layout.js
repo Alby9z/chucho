@@ -109,7 +109,7 @@ function JsonLd() {
         closes: "13:00",
       },
     ],
-    sameAs: [siteConfig.social.facebook, siteConfig.social.instagram],
+    sameAs: [siteConfig.socials.facebook].filter(Boolean),
   };
 
   return (

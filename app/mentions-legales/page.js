@@ -19,19 +19,11 @@ export default function MentionsLegalesPage() {
 
       <section className="py-16">
         <div className="container-page max-w-[760px] legal-content">
-          <div className="mb-8 p-5 border border-clay/30 bg-clay/5 rounded-md text-sm text-ink-soft">
-            <strong className="text-forest block mb-1">⚠️ À compléter avant mise en ligne</strong>
-            Les informations ci-dessous contiennent des champs à renseigner (statut juridique,
-            n° SIRET, hébergeur). Un site professionnel en France doit obligatoirement afficher
-            ces informations réelles et exactes. Modifiez-les dans{" "}
-            <code className="text-xs bg-white/60 px-1.5 py-0.5 rounded">lib/site-config.js</code>{" "}
-            et directement dans ce fichier si besoin.
-          </div>
 
           <h2>1. Éditeur du site</h2>
           <p>
             Le présent site est édité par <strong>{siteConfig.legal.ownerName}</strong>, exerçant
-            sous le statut de <strong>{siteConfig.legal.status}</strong>, sous le nom commercial{" "}
+            sous le statut de <strong>{siteConfig.legal.status}</strong>, sous le nom commercial{"Digiprogtech "}
             « {siteConfig.name} ».
           </p>
           <ul>
